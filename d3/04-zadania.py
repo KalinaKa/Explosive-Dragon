@@ -83,10 +83,55 @@ else:
 # 5. inupt - miesiąc oraz dzien (np. mar-18),
 #   okreslic pore roku
 
+print("Witaj! Sprawdź, do jakiej pory roku należy dany miesiąc.")
+month = input("Podaj nazwę miesiąca, którą chcesz sprawdzić (np. styczeń lub sty-18):\n")
+
+month_clean = month.strip().upper()
+print(type(month_clean))
+print(month_clean)
+
+
+spring = ['MARZEC', 'MAR-18''KWIECIEŃ', 'KWI-2018','KWIECIEN', 'MAJ', 'MAJ-2018']
+summer = ['CZERWIEC', 'CZER-18', 'LIPIEC', 'LIP-18', 'SIERPIEŃ','SIERPIEN', 'SIE-18']
+autumn = ['WRZESIEŃ', 'WRZESIEN', 'WRZE-18', 'PAŹDZIERNIK', 'PAZDZIERNIK', 'PAŹ-18', 'PAZ-18', 'LISTOPAD', 'LIS-18']
+winter = ['GRUDZIEŃ', 'GRUDZIEN', 'GRU-18', 'STYCZEŃ', 'STYCZEN', 'STY-18', 'LUTY', 'LUT-18']
+
+if month_clean in spring:
+    print("{} jest wiosną.".format(month_clean))
+elif month_clean in summer:
+    print("{} jest latem.".format(month_clean))
+elif month_clean in autumn:
+    print("{} jest jesienią.".format(month_clean))
+else:
+    print("{} jest zimą.".format(month_clean))
+
+
 # 6. ruletka: otrzymawszy liczbę, sprawdź czy jest ona (np. 17R (red), 2B (black)):
 #   czerwona czy czarna*
 #   wysoka czy niska (do 18, od 18)
 #   parzysta czy nieparzysta
+
+wynik = '17R'
+
+kolor = wynik[-1]
+print(kolor)
+
+if kolor == 'R':
+    print('{} to czerwone pole.'.format(wynik))
+else:
+    print('Wylosowałeś pole w kolorze czarnym.')
+
+liczba = int(wynik[:2])
+
+if liczba >= 18:
+    print('{} to wysoka liczba.'.format(wynik))
+else:
+    print('{} to niska liczba.'.format(wynik))
+
+if liczba % 2 == 0:
+    print('{} to parzysta liczba.'.format(wynik))
+else:
+    print('{} to nieparzysta liczba.'.format(wynik))
 
 # 7. zamiana temperatury (przeliczyc, tu bedzie wycinanie znaku istotne)
 #     wejscie: "35C" "100F"
@@ -94,11 +139,33 @@ else:
 #     C = (F - 32) * (5/9)
 #     F = C * (9 / 5) + 32
 
+
+CELSJUSZ = '35C'
+F = '100F'
+
+dl = len(temp)
+stopnie_temp = temp[0:dl-1]
+
+
+if "C" in temp:
+    typ = 'Celsjusza'
+
+
 # 8. podane 3 boki trojkata, okresl
 #     - czy uda sie narysowac trojkata
 #       * dl. jednego boku musi byc < dlugosc sumy dwoch pozostalych
 #     - czy jest to tr. roznoboczny, rownoramienny czy rownoboczny
 
+a = 5
+b = 10
+c = 13
+
+if a == b == c:
+    print("Trójkąt równoboczny")
+elif a != b != c:
+    print("Trójkąt różnoboczny")
+else:
+    print("Trójkąt równoramienny")
 
 
 
