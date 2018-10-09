@@ -38,5 +38,5 @@ def is_prime_number (num):
             return wynik
             break
 
-x = is_prime_number(8)
+x = is_prime_number(1200)
 print(x)
