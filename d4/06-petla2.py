@@ -16,3 +16,17 @@ while nieprawidlowe:
             nieprawidlowe = False
 
 print("Gratulacje, jesteś zarejestrowany.")
+
+
+
+blad = True
+
+while blad:
+    breed = input("Podaj rasę swojego psa lub Q, aby zakończyć:\n")
+
+    if breed.upper() == "Q":
+        print("Paaaaa")
+        quit()
+    elif breed.isalpha():
+        if breed.upper():
+            blad = False
