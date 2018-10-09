@@ -3,7 +3,7 @@
 elementy = { 1:"ola", 0:"ala",  2:"ela" }
 
 print(elementy)
-print(elementy[1])
+print(elementy[2])
 
 slownik = {"imie": "Adam", "nazwisko":"kowalski", "wiek":32}
 
@@ -32,3 +32,17 @@ print(slownik)
 slownik["adres"] = "Gdynia"
 print(slownik)
 
+##moje zadanie - Bday calendar
+
+birthday = {"ppl": ["Marcin", "Kalina", "Smok"], "dates": ["May", "Sep", "Jun"]}
+
+whose_bday = input("Whose bday U want to check?").capitalize()
+print(whose_bday)
+
+if whose_bday in birthday['ppl']:
+    print("Happy birthday")
+else:
+    birthday["ppl"].append(whose_bday)
+    when_bday = input("It's not on the list. Give me birthday date?").strip().capitalize()
+    birthday["dates"].append(when_bday)
+    print(birthday.values())
