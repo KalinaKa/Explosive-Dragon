@@ -3,6 +3,6 @@
 #shift + f6 -> zmiana nazwy
 
 
-file = open('lokomotywa.txt')
+file = open('lokomotywa.txt', encoding='utf-8')
 
 print(file.read())
