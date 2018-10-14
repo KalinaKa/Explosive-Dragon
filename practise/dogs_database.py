@@ -79,7 +79,7 @@ elif specify_action == 'C':
 
 elif specify_action == 'Q':
     print('Dzięki za skorzystanie z bazy Psów Na Fali. Do następnego!')
-    pass
+    exit(0)
 
 else:
     print('Nie rozumiem Twojej komendy. Podaj właściwą. :)')
