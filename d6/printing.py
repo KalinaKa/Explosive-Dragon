@@ -1,4 +1,4 @@
-#ctr+d
+#ctr+d: kopiownie linijki
 sciezka = "c:\open\nowy\plik\termint.xls"
 sciezka2 = "c:\\open\\nowy\\plik\\termint.xls"
 #r - raw string, wszystko musi byc drukowane

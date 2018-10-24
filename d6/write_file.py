@@ -11,3 +11,8 @@ with open('dane.csv', 'w', encoding='utf-8') as file:
 
     wpis2 = "Adam,Turek,45,8000.00"
     file.write(wpis2 + '\n')
+
+
+
+
+

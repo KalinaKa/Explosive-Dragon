@@ -36,3 +36,10 @@ print(najw_indeks)
 osoby[najw_indeks+1] = {"imie": "Anna", "nazwisko":"nowak", "wiek":23}
 
 
+
+osoby = {"studenci":["Ala", "Jan", "Ania"], "wykladowcy":["doktor","profesor"]}
+print(osoby["studenci"][1])
+osoby["wykladowcy"].append("magister")
+osoby["administracja"] = ["pani Basia z dziekanatu"]
+osoby.update({"ochrona":"Impel"})
+print(osoby['wykladowcy'])

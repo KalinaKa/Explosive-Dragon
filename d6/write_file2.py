@@ -17,3 +17,6 @@ kopia_bazy = [wpis +'\n' for wpis in baza]
 with open('baza.csv', 'w', encoding='utf-8') as file:
 
     file.writelines(kopia_bazy)
+
+
+
