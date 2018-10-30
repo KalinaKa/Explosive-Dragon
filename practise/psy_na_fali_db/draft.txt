@@ -1,0 +1,24 @@
+Baza danych przechowująca informacje o psach będących w klubie "Na Fali"
+Obecny stan:
+zalążek UI (dog_db_UI), klasa Dog (dog.py), odseparowana funkcjonalność dodawania psa (add_dog.py).
+
+
+1. Możliwe operacje:
+    A: Dodaj psa
+    B: Usuń psa
+    D: Edytuj psa
+    E: Sprawdź ogólną liczbę psów w klubie
+    F: Wyświetl wszystkie psy
+    Q: Wyjdź z programu
+
+2. Klasy:
+    a. Dog - definiuje pola przechowujące informacje o psach (rekordach)
+        Zmienne prywatne: __age i __ob_class: nie działa przypisywanie wartości via setter
+    b. Baza - czy to dobre rozwiązanie, żeby baza także była klasą i przechowywała metody takie jak: usuń psa, edytuj psa
+    sprawdź ogólną liczbę psów w klubie, wyświetl wszystkie psy?
+
+3. Baza danych:
+   Aktualne rozwiązanie w add_dog.py -> user input przekazuje wartości do pól instancji klasy Dog (słownik).
+   Słownik jest appendowany do listy 'db', która jest zapisywana do zew. pliku z użyciem pickle.
+
+   Obecny błąd: działa zapisanie wielu rekordów do bazy, niestety odczytuje pierwszy wyeksportowany rekord.
